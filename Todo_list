@@ -1,0 +1,16 @@
+This is a list of features I plan to implement in this code. 
+The primary purpose is to explore and practice implementing different functionality and features.
+
+1. Write test cases for the different functionality in the classes using GoogleTest.
+2. Implement true randomness for the puzzle collection and use a memory feature to ensure that no puzzle
+   is repeated in a single game session 
+   (Keep a array or dynamic pointer that stores the previous puzzles (index value) and so ensures no repetition).
+3. Use pdcursor for better and more intuitive user interface. It also allows me to ensure portability of the code.
+4. Implement functionality that would allow the user to verify the validity of a move after he makes it.
+   (Possible way to implement this: Solve the puzzle in the backend after it's loaded and keep
+   that stored. Then if user requests a check, compare it with that).
+5. Prevent the user from changing the pre-defined value cells in the puzzles 
+   (Possible ways to implement this: Making a copy of the original and verifying during
+   input that the cell index corresponds to a zero-value cell of the original).
+6. Create a Game class to encapsulate the gameplay functionality (including recording time for the game) and 
+   a Session class for the overall session maintenance (can keep track of time per game and such records)
